@@ -2,7 +2,7 @@
 
 This Mac OS command line application provides solutions to the puzzles on the Advent Of Code web site. 
 You will need to be running
-version 10.1 or newer of Xcode with Swift 4 in order to use this project.
+version 10.1 or newer of Xcode with Swift 4.2 in order to use this project.
 
 I have chosen to try and tackle these exercises in Swift mostly as a way to try and learn Swift.
 
