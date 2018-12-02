@@ -10,6 +10,9 @@
 		E0B9868D21B2B78E00649A62 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B9868C21B2B78E00649A62 /* main.swift */; };
 		E0B9869621B2B87B00649A62 /* Day01.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B9869521B2B87B00649A62 /* Day01.swift */; };
 		E0B9869821B2B89800649A62 /* Day01PuzzleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B9869721B2B89800649A62 /* Day01PuzzleInput.swift */; };
+		E0D0C48221B41E01001F231F /* Day02.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D0C48121B41E01001F231F /* Day02.swift */; };
+		E0D0C48421B41E14001F231F /* Day02PuzzleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D0C48321B41E14001F231F /* Day02PuzzleInput.swift */; };
+		E0D0C48721B4310B001F231F /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D0C48621B4310B001F231F /* StringExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +32,9 @@
 		E0B9868C21B2B78E00649A62 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		E0B9869521B2B87B00649A62 /* Day01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day01.swift; sourceTree = "<group>"; };
 		E0B9869721B2B89800649A62 /* Day01PuzzleInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day01PuzzleInput.swift; sourceTree = "<group>"; };
+		E0D0C48121B41E01001F231F /* Day02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day02.swift; sourceTree = "<group>"; };
+		E0D0C48321B41E14001F231F /* Day02PuzzleInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day02PuzzleInput.swift; sourceTree = "<group>"; };
+		E0D0C48621B4310B001F231F /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,7 @@
 		E0B9868B21B2B78E00649A62 /* AdventOfCode2018 */ = {
 			isa = PBXGroup;
 			children = (
+				E0D0C48521B430FA001F231F /* Extensions */,
 				E0B9869421B2B85C00649A62 /* Puzzle input */,
 				E0B9869321B2B84C00649A62 /* Puzzles */,
 				E0B9868C21B2B78E00649A62 /* main.swift */,
@@ -71,7 +78,8 @@
 		E0B9869321B2B84C00649A62 /* Puzzles */ = {
 			isa = PBXGroup;
 			children = (
-				E0B9869721B2B89800649A62 /* Day01PuzzleInput.swift */,
+				E0B9869521B2B87B00649A62 /* Day01.swift */,
+				E0D0C48121B41E01001F231F /* Day02.swift */,
 			);
 			path = Puzzles;
 			sourceTree = "<group>";
@@ -79,9 +87,18 @@
 		E0B9869421B2B85C00649A62 /* Puzzle input */ = {
 			isa = PBXGroup;
 			children = (
-				E0B9869521B2B87B00649A62 /* Day01.swift */,
+				E0B9869721B2B89800649A62 /* Day01PuzzleInput.swift */,
+				E0D0C48321B41E14001F231F /* Day02PuzzleInput.swift */,
 			);
 			path = "Puzzle input";
+			sourceTree = "<group>";
+		};
+		E0D0C48521B430FA001F231F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E0D0C48621B4310B001F231F /* StringExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +158,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0D0C48721B4310B001F231F /* StringExtensions.swift in Sources */,
 				E0B9868D21B2B78E00649A62 /* main.swift in Sources */,
+				E0D0C48421B41E14001F231F /* Day02PuzzleInput.swift in Sources */,
 				E0B9869821B2B89800649A62 /* Day01PuzzleInput.swift in Sources */,
+				E0D0C48221B41E01001F231F /* Day02.swift in Sources */,
 				E0B9869621B2B87B00649A62 /* Day01.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
