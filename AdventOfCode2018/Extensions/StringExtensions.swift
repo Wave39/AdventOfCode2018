@@ -15,7 +15,8 @@ extension String {
     }
     
     func toInt() -> Int {
-        return Int(self.trim())!
+        guard let retval = Int(self.trim()) else { return 0 }
+        return retval
     }
     
     func parseIntoStringArray() -> [String] {

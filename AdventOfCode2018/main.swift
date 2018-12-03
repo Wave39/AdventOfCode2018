@@ -24,7 +24,7 @@ while !quitApp {
         if response == "q" || response == "Q" {
             quitApp = true
         } else if response != "" {
-            puzzle = Int(response ?? "0")!
+            puzzle = (response?.toInt())!
         } else {
             puzzle = defaultPuzzle
             print ("Defaulting to puzzle \(defaultPuzzle)")

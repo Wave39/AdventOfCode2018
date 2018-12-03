@@ -11,22 +11,62 @@ import Cocoa
 class Day03: NSObject {
 
     public func solve() {
-        let puzzleInput = Day03PuzzleInput.puzzleInput_test
+        let puzzleInput = Day03PuzzleInput.puzzleInput
         let claims = Claim.parse(str: puzzleInput)
         
-        let part1 = solvePart1(claims: claims)
+        let (part1, part2) = solveBothParts(claims: claims)
         print ("Part 1 solution: \(part1)")
-        
-        //let part2 = solvePart2(arr: array)
-        //print ("Part 2 solution: \(part2)")
+        print ("Part 2 solution: \(part2)")
     }
     
-    func solvePart1(claims: [Claim]) -> Int {
-        var retval = 0
+    func solveBothParts(claims: [Claim]) -> (Int, Int) {
+        var part1 = 0
         
-        return retval
+        var fabric:[[Int]] = []
+        let maxSize = 1000
+        for _ in 0..<maxSize {
+            var rowArray:[Int] = []
+            for _ in 0..<maxSize {
+                rowArray.append(0)
+            }
+            
+            fabric.append(rowArray)
+        }
+        
+        for claim in claims {
+            for row in claim.topEdge..<(claim.topEdge + claim.height) {
+                for col in claim.leftEdge..<(claim.leftEdge + claim.width) {
+                    fabric[row][col] += 1
+                }
+            }
+        }
+        
+        for row in 0..<maxSize {
+            for col in 0..<maxSize {
+                if fabric[row][col] >= 2 {
+                    part1 += 1
+                }
+            }
+        }
+        
+        var part2 = 0
+        for claim in claims {
+            var claimIsClean = true
+            for row in claim.topEdge..<(claim.topEdge + claim.height) {
+                for col in claim.leftEdge..<(claim.leftEdge + claim.width) {
+                    if fabric[row][col] > 1 {
+                        claimIsClean = false
+                    }
+                }
+            }
+            
+            if claimIsClean {
+                part2 = claim.idNumber
+            }
+        }
+        
+        return (part1, part2)
     }
-    
 }
 
 class Claim {
@@ -55,6 +95,4 @@ class Claim {
         
         return retval
     }
-    
 }
-
