@@ -19,7 +19,11 @@ extension String {
     }
     
     func parseIntoStringArray() -> [String] {
-        let arr = self.split(separator: "\n")
+        return parseIntoStringArray(separator: "\n")
+    }
+    
+    func parseIntoStringArray(separator: Character) -> [String] {
+        let arr = self.split(separator: separator)
         var retval: [String] = []
         for s in arr {
             retval.append(String(s))
