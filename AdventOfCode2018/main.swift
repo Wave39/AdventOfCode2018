@@ -12,7 +12,7 @@ print ("")
 print ("Welcome to BP's Advent Of Code 2018 Solution Machine.")
 print ("Make sure to click in the Output window to enter which puzzle you would like to solve.")
 
-let defaultPuzzle = 3
+let defaultPuzzle = 4
 
 var quitApp = false
 while !quitApp {
@@ -42,6 +42,50 @@ while !quitApp {
             Day02().solve()
         } else if puzzle == 3 {
             Day03().solve()
+        } else if puzzle == 4 {
+            Day04().solve()
+        } else if puzzle == 5 {
+            //Day05().solve()
+        } else if puzzle == 6 {
+            //Day06().solve()
+        } else if puzzle == 7 {
+            //Day07().solve()
+        } else if puzzle == 8 {
+            //Day08().solve()
+        } else if puzzle == 9 {
+            //Day09().solve()
+        } else if puzzle == 10 {
+            //Day10().solve()
+        } else if puzzle == 11 {
+            //Day11().solve()
+        } else if puzzle == 12 {
+            //Day12().solve()
+        } else if puzzle == 13 {
+            //Day13().solve()
+        } else if puzzle == 14 {
+            //Day14().solve()
+        } else if puzzle == 15 {
+            //Day15().solve()
+        } else if puzzle == 16 {
+            //Day16().solve()
+        } else if puzzle == 17 {
+            //Day17().solve()
+        } else if puzzle == 18 {
+            //Day18().solve()
+        } else if puzzle == 19 {
+            //Day19().solve()
+        } else if puzzle == 20 {
+            //Day20().solve()
+        } else if puzzle == 21 {
+            //Day21().solve()
+        } else if puzzle == 22 {
+            //Day22().solve()
+        } else if puzzle == 23 {
+            //Day23().solve()
+        } else if puzzle == 24 {
+            //Day24().solve()
+        } else if puzzle == 25 {
+            //Day25().solve()
         }
         
         let end = DispatchTime.now()
