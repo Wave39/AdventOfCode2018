@@ -71,6 +71,11 @@ extension String {
         return retval
     }
     
+    mutating func removeAtIndex(idx: Int) {
+        if let index = self.index(self.startIndex, offsetBy: idx, limitedBy: self.endIndex) {
+            self.remove(at: index)
+        }
+    }
 }
 
 extension StringProtocol {
