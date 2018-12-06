@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E01FE3DA21B93A1900519D06 /* Day06PuzzleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01FE3D921B93A1900519D06 /* Day06PuzzleInput.swift */; };
+		E01FE3DC21B93A2200519D06 /* Day06.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01FE3DB21B93A2200519D06 /* Day06.swift */; };
+		E01FE3DF21B93B8000519D06 /* Point2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01FE3DE21B93B8000519D06 /* Point2D.swift */; };
 		E03684FD21B7F3E900CD589A /* Day05PuzzleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03684FC21B7F3E900CD589A /* Day05PuzzleInput.swift */; };
 		E03684FF21B7F3F400CD589A /* Day05.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03684FE21B7F3F400CD589A /* Day05.swift */; };
 		E0648FBC21B5546C000105DE /* Day03PuzzleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0648FBB21B5546C000105DE /* Day03PuzzleInput.swift */; };
@@ -34,6 +37,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E01FE3D921B93A1900519D06 /* Day06PuzzleInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day06PuzzleInput.swift; sourceTree = "<group>"; };
+		E01FE3DB21B93A2200519D06 /* Day06.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day06.swift; sourceTree = "<group>"; };
+		E01FE3DE21B93B8000519D06 /* Point2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point2D.swift; sourceTree = "<group>"; };
 		E03684FC21B7F3E900CD589A /* Day05PuzzleInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day05PuzzleInput.swift; sourceTree = "<group>"; };
 		E03684FE21B7F3F400CD589A /* Day05.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day05.swift; sourceTree = "<group>"; };
 		E0648FBB21B5546C000105DE /* Day03PuzzleInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day03PuzzleInput.swift; sourceTree = "<group>"; };
@@ -60,6 +66,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E01FE3DD21B93B6A00519D06 /* Structures */ = {
+			isa = PBXGroup;
+			children = (
+				E01FE3DE21B93B8000519D06 /* Point2D.swift */,
+			);
+			path = Structures;
+			sourceTree = "<group>";
+		};
 		E0B9868021B2B78E00649A62 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +93,7 @@
 		E0B9868B21B2B78E00649A62 /* AdventOfCode2018 */ = {
 			isa = PBXGroup;
 			children = (
+				E01FE3DD21B93B6A00519D06 /* Structures */,
 				E0D0C48521B430FA001F231F /* Extensions */,
 				E0B9869421B2B85C00649A62 /* Puzzle input */,
 				E0B9869321B2B84C00649A62 /* Puzzles */,
@@ -95,6 +110,7 @@
 				E0648FBD21B55475000105DE /* Day03.swift */,
 				F099F1F921B6C03C00D37DE7 /* Day04.swift */,
 				E03684FE21B7F3F400CD589A /* Day05.swift */,
+				E01FE3DB21B93A2200519D06 /* Day06.swift */,
 			);
 			path = Puzzles;
 			sourceTree = "<group>";
@@ -107,6 +123,7 @@
 				E0648FBB21B5546C000105DE /* Day03PuzzleInput.swift */,
 				F099F1F721B6C02F00D37DE7 /* Day04PuzzleInput.swift */,
 				E03684FC21B7F3E900CD589A /* Day05PuzzleInput.swift */,
+				E01FE3D921B93A1900519D06 /* Day06PuzzleInput.swift */,
 			);
 			path = "Puzzle input";
 			sourceTree = "<group>";
@@ -176,6 +193,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E01FE3DC21B93A2200519D06 /* Day06.swift in Sources */,
+				E01FE3DF21B93B8000519D06 /* Point2D.swift in Sources */,
 				E03684FD21B7F3E900CD589A /* Day05PuzzleInput.swift in Sources */,
 				E0D0C48721B4310B001F231F /* StringExtensions.swift in Sources */,
 				E0B9868D21B2B78E00649A62 /* main.swift in Sources */,
@@ -188,6 +207,7 @@
 				E0D0C48221B41E01001F231F /* Day02.swift in Sources */,
 				E0B9869621B2B87B00649A62 /* Day01.swift in Sources */,
 				E0648FBE21B55475000105DE /* Day03.swift in Sources */,
+				E01FE3DA21B93A1900519D06 /* Day06PuzzleInput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
