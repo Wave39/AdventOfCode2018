@@ -19,6 +19,11 @@ extension String {
         return retval
     }
     
+    var asciiValue: UInt32 {
+        let c = self.unicodeScalars.first
+        return c?.value ?? 0
+    }
+
     func parseIntoStringArray() -> [String] {
         return parseIntoStringArray(separator: "\n")
     }
