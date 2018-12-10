@@ -8,8 +8,6 @@
 
 import Cocoa
 
-import Foundation
-
 struct Point2D: Hashable {
     var x : Int = 0
     var y : Int = 0
