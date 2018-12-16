@@ -8,7 +8,7 @@
 
 import Cocoa
 
-struct Point2D: Hashable {
+struct Point2D: Hashable, CustomStringConvertible {
     var x : Int = 0
     var y : Int = 0
     
@@ -42,4 +42,14 @@ struct Point2D: Hashable {
     func manhattanDistanceTo(pt: Point2D) -> Int {
         return abs(self.x - pt.x) + abs(self.y - pt.y)
     }
+    
+    func adjacentLocations() -> [Point2D] {
+        var retval: [Point2D] = []
+        retval.append(Point2D(x: self.x, y: self.y - 1))
+        retval.append(Point2D(x: self.x - 1, y: self.y))
+        retval.append(Point2D(x: self.x + 1, y: self.y))
+        retval.append(Point2D(x: self.x, y: self.y + 1))
+        return retval
+    }
+    
 }

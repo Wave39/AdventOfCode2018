@@ -22,6 +22,8 @@
 		E0B9868D21B2B78E00649A62 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B9868C21B2B78E00649A62 /* main.swift */; };
 		E0B9869621B2B87B00649A62 /* Day01.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B9869521B2B87B00649A62 /* Day01.swift */; };
 		E0B9869821B2B89800649A62 /* Day01PuzzleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B9869721B2B89800649A62 /* Day01PuzzleInput.swift */; };
+		E0BAB0BF21C553800079916F /* Day15PuzzleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BAB0BE21C553800079916F /* Day15PuzzleInput.swift */; };
+		E0BAB0C121C5538D0079916F /* Day15.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BAB0C021C5538D0079916F /* Day15.swift */; };
 		E0D0C48221B41E01001F231F /* Day02.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D0C48121B41E01001F231F /* Day02.swift */; };
 		E0D0C48421B41E14001F231F /* Day02PuzzleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D0C48321B41E14001F231F /* Day02PuzzleInput.swift */; };
 		E0D0C48721B4310B001F231F /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D0C48621B4310B001F231F /* StringExtensions.swift */; };
@@ -71,6 +73,8 @@
 		E0B9868C21B2B78E00649A62 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		E0B9869521B2B87B00649A62 /* Day01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day01.swift; sourceTree = "<group>"; };
 		E0B9869721B2B89800649A62 /* Day01PuzzleInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day01PuzzleInput.swift; sourceTree = "<group>"; };
+		E0BAB0BE21C553800079916F /* Day15PuzzleInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day15PuzzleInput.swift; sourceTree = "<group>"; };
+		E0BAB0C021C5538D0079916F /* Day15.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day15.swift; sourceTree = "<group>"; };
 		E0D0C48121B41E01001F231F /* Day02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day02.swift; sourceTree = "<group>"; };
 		E0D0C48321B41E14001F231F /* Day02PuzzleInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day02PuzzleInput.swift; sourceTree = "<group>"; };
 		E0D0C48621B4310B001F231F /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
@@ -157,6 +161,7 @@
 				F0F9A34B21C16D9400C4A5EA /* Day12.swift */,
 				F033431621C2CABD00A0B3A7 /* Day13.swift */,
 				F0A30D7C21C4050A00965952 /* Day14.swift */,
+				E0BAB0C021C5538D0079916F /* Day15.swift */,
 			);
 			path = Puzzles;
 			sourceTree = "<group>";
@@ -178,6 +183,7 @@
 				F0F9A34921C16D8B00C4A5EA /* Day12PuzzleInput.swift */,
 				F033431421C2CAB300A0B3A7 /* Day13PuzzleInput.swift */,
 				F0A30D7A21C404FB00965952 /* Day14PuzzleInput.swift */,
+				E0BAB0BE21C553800079916F /* Day15PuzzleInput.swift */,
 			);
 			path = "Puzzle input";
 			sourceTree = "<group>";
@@ -252,6 +258,7 @@
 				E01FE3DF21B93B8000519D06 /* Point2D.swift in Sources */,
 				F0C503EF21BEABB700654408 /* Rect2D.swift in Sources */,
 				E03684FD21B7F3E900CD589A /* Day05PuzzleInput.swift in Sources */,
+				E0BAB0C121C5538D0079916F /* Day15.swift in Sources */,
 				F0F9A34C21C16D9400C4A5EA /* Day12.swift in Sources */,
 				E0D0C48721B4310B001F231F /* StringExtensions.swift in Sources */,
 				E02CB3D521BE947700CABAD5 /* Particle2D.swift in Sources */,
@@ -262,6 +269,7 @@
 				E0648FBC21B5546C000105DE /* Day03PuzzleInput.swift in Sources */,
 				E07BB3E821BD4984003AF648 /* Day09.swift in Sources */,
 				F0F9A34A21C16D8B00C4A5EA /* Day12PuzzleInput.swift in Sources */,
+				E0BAB0BF21C553800079916F /* Day15PuzzleInput.swift in Sources */,
 				F0A30D7B21C404FC00965952 /* Day14PuzzleInput.swift in Sources */,
 				E0D0C48421B41E14001F231F /* Day02PuzzleInput.swift in Sources */,
 				E0D46C8621BBEDB6006C21DB /* Day08PuzzleInput.swift in Sources */,
