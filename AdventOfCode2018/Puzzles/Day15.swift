@@ -406,8 +406,6 @@ class Day15: NSObject {
 
             // remove dead units
         } while !gameOver
-
-        return -99
     }
 
     func findAvailableSteps(location: Point2D) -> [Point2D] {
