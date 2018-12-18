@@ -79,7 +79,7 @@ class Day17: NSObject {
             }
         }
 
-        print(groundToString(ground))
+        //print(groundToString(ground))
         
         let part1 = solvePart1()
         print ("Part 1 solution: \(part1)")
@@ -109,7 +109,7 @@ class Day17: NSObject {
                 leftPoint = pt.x + 1
                 leftBounded = true
                 keepLoopingLeft = false
-            } else if ground[pt.y][pt.x] == "." && ground[pt.y + 1][pt.x] == "." {
+            } else if ground[pt.y][pt.x] == "." && ground[pt.y + 1][pt.x] == "." && ground[pt.y + 1][pt.x + 1] == "#" {
                 // a drop point was found
                 leftPoint = pt.x
                 leftBounded = false
@@ -125,7 +125,7 @@ class Day17: NSObject {
                 rightPoint = pt.x - 1
                 rightBounded = true
                 keepLoopingRight = false
-            } else if ground[pt.y][pt.x] == "." && ground[pt.y + 1][pt.x] == "." {
+            } else if ground[pt.y][pt.x] == "." && ground[pt.y + 1][pt.x] == "." && ground[pt.y + 1][pt.x - 1] == "#" {
                 // a drop point was found
                 rightPoint = pt.x
                 rightBounded = false
@@ -153,13 +153,15 @@ class Day17: NSObject {
             } else {
                 let nextTile = ground[pt.y + 1][pt.x]
                 if nextTile == "#" {
-                    print("Stop")
-                    print("flowThroughPoints: \(flowThroughPoints)")
+                    //print("Stop")
+                    //print("flowThroughPoints: \(flowThroughPoints)")
                     keepFlowing = false
                 } else if nextTile == "." {
                     pt = Point2D(x: pt.x, y: pt.y + 1)
                     flowThroughPoints.append(pt)
                     ground[pt.y][pt.x] = "|"
+                } else if nextTile == "~" {
+                    keepFlowing = false
                 } else {
                     print("Unknown situation for next tile: \(nextTile)")
                 }
@@ -201,12 +203,14 @@ class Day17: NSObject {
             }
         }
         
-        print(groundToString(ground))
+        //print(groundToString(ground))
     }
     
     public func solvePart1() -> Int {
         processWaterFlow(springLocation)
-        
+        print("Final ground configuration:")
+        print(groundToString(ground))
+
         let retval = ground.flatMap { $0 }.filter { $0 == "|" || $0 == "~" }.count
         
         return retval
