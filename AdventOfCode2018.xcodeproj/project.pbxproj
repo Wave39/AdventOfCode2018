@@ -37,6 +37,9 @@
 		F033431721C2CABD00A0B3A7 /* Day13.swift in Sources */ = {isa = PBXBuildFile; fileRef = F033431621C2CABD00A0B3A7 /* Day13.swift */; };
 		F05846DB21CA990200BC9D63 /* Day19PuzzleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05846DA21CA990200BC9D63 /* Day19PuzzleInput.swift */; };
 		F05846DD21CA990A00BC9D63 /* Day19.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05846DC21CA990A00BC9D63 /* Day19.swift */; };
+		F0840D9321CBE32B003286E9 /* Day20PuzzleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0840D9221CBE32B003286E9 /* Day20PuzzleInput.swift */; };
+		F0840D9521CBE335003286E9 /* Day20.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0840D9421CBE335003286E9 /* Day20.swift */; };
+		F0840D9721CC0E9F003286E9 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0840D9621CC0E9F003286E9 /* Stack.swift */; };
 		F099F1F821B6C02F00D37DE7 /* Day04PuzzleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F099F1F721B6C02F00D37DE7 /* Day04PuzzleInput.swift */; };
 		F099F1FA21B6C03C00D37DE7 /* Day04.swift in Sources */ = {isa = PBXBuildFile; fileRef = F099F1F921B6C03C00D37DE7 /* Day04.swift */; };
 		F0A30D7B21C404FC00965952 /* Day14PuzzleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A30D7A21C404FB00965952 /* Day14PuzzleInput.swift */; };
@@ -96,6 +99,9 @@
 		F033431621C2CABD00A0B3A7 /* Day13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day13.swift; sourceTree = "<group>"; };
 		F05846DA21CA990200BC9D63 /* Day19PuzzleInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day19PuzzleInput.swift; sourceTree = "<group>"; };
 		F05846DC21CA990A00BC9D63 /* Day19.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day19.swift; sourceTree = "<group>"; };
+		F0840D9221CBE32B003286E9 /* Day20PuzzleInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day20PuzzleInput.swift; sourceTree = "<group>"; };
+		F0840D9421CBE335003286E9 /* Day20.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day20.swift; sourceTree = "<group>"; };
+		F0840D9621CC0E9F003286E9 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		F099F1F721B6C02F00D37DE7 /* Day04PuzzleInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day04PuzzleInput.swift; sourceTree = "<group>"; };
 		F099F1F921B6C03C00D37DE7 /* Day04.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day04.swift; sourceTree = "<group>"; };
 		F0A30D7A21C404FB00965952 /* Day14PuzzleInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day14PuzzleInput.swift; sourceTree = "<group>"; };
@@ -128,6 +134,7 @@
 				E01FE3DE21B93B8000519D06 /* Point2D.swift */,
 				E02CB3D421BE947700CABAD5 /* Particle2D.swift */,
 				F0C503EE21BEABB700654408 /* Rect2D.swift */,
+				F0840D9621CC0E9F003286E9 /* Stack.swift */,
 			);
 			path = Structures;
 			sourceTree = "<group>";
@@ -182,6 +189,7 @@
 				F00659F221C7FDD30045DAB5 /* Day17.swift */,
 				F0E550E421C97F1700BCC754 /* Day18.swift */,
 				F05846DC21CA990A00BC9D63 /* Day19.swift */,
+				F0840D9421CBE335003286E9 /* Day20.swift */,
 			);
 			path = Puzzles;
 			sourceTree = "<group>";
@@ -208,6 +216,7 @@
 				F00659F021C7FDC50045DAB5 /* Day17PuzzleInput.swift */,
 				F0E550E221C97F0F00BCC754 /* Day18PuzzleInput.swift */,
 				F05846DA21CA990200BC9D63 /* Day19PuzzleInput.swift */,
+				F0840D9221CBE32B003286E9 /* Day20PuzzleInput.swift */,
 			);
 			path = "Puzzle input";
 			sourceTree = "<group>";
@@ -284,8 +293,10 @@
 				E01FE3DF21B93B8000519D06 /* Point2D.swift in Sources */,
 				F0C503EF21BEABB700654408 /* Rect2D.swift in Sources */,
 				E03684FD21B7F3E900CD589A /* Day05PuzzleInput.swift in Sources */,
+				F0840D9321CBE32B003286E9 /* Day20PuzzleInput.swift in Sources */,
 				E0BAB0C121C5538D0079916F /* Day15.swift in Sources */,
 				F00659F321C7FDD30045DAB5 /* Day17.swift in Sources */,
+				F0840D9721CC0E9F003286E9 /* Stack.swift in Sources */,
 				F0F9A34C21C16D9400C4A5EA /* Day12.swift in Sources */,
 				E0D0C48721B4310B001F231F /* StringExtensions.swift in Sources */,
 				E02CB3D521BE947700CABAD5 /* Particle2D.swift in Sources */,
@@ -296,6 +307,7 @@
 				E0A56F8021C6A04200E400C5 /* Day16PuzzleInput.swift in Sources */,
 				F0A30D7D21C4050A00965952 /* Day14.swift in Sources */,
 				E0648FBC21B5546C000105DE /* Day03PuzzleInput.swift in Sources */,
+				F0840D9521CBE335003286E9 /* Day20.swift in Sources */,
 				E07BB3E821BD4984003AF648 /* Day09.swift in Sources */,
 				F0F9A34A21C16D8B00C4A5EA /* Day12PuzzleInput.swift in Sources */,
 				E0BAB0BF21C553800079916F /* Day15PuzzleInput.swift in Sources */,
