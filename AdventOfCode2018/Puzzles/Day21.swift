@@ -89,19 +89,13 @@ class Day21: NSObject {
     public func solve() {
         let puzzleInput = Day21PuzzleInput.puzzleInput
         
-        let part1 = solvePart1(puzzleInput: puzzleInput)
-        print ("Part 1 solution: \(part1)")
-        //let part2 = solvePart2(puzzleInput: puzzleInput)
-        //print ("Part 2 solution: \(part2)")
+        //let part1 = solvePart1(puzzleInput: puzzleInput)
+        //print ("Part 1 solution: \(part1)")
+        let part2 = solvePart2(puzzleInput: puzzleInput)
+        print ("Part 2 solution: \(part2)")
     }
     
     public func solvePart1(puzzleInput: String) -> Int {
-        let c = runProgram(puzzleInput: puzzleInput)
-        
-        return c
-    }
-    
-    func runProgram(puzzleInput: String) -> Int {
         let program = parseIntoProgram(str: puzzleInput)
         while true {
             program.registers[program.boundRegister] = program.instructionPointer
@@ -114,6 +108,38 @@ class Day21: NSObject {
                 return program.registers[2]
             }
         }
+    }
+    
+    public func solvePart2(puzzleInput: String) -> Int {
+        let program = parseIntoProgram(str: puzzleInput)
+        var registerSet: [Int] = []
+        var previous: Int = 0
+        repeat {
+            program.registers[program.boundRegister] = program.instructionPointer
+            
+            program.registers = runCommandString(command: program.code[program.instructionPointer], registers: program.registers)
+            program.instructionPointer = program.registers[program.boundRegister]
+            
+            program.instructionPointer += 1
+            if program.instructionPointer == 28 {
+                if registerSet.contains(program.registers[2]) {
+                    return previous
+                }
+                
+                if registerSet.count > 0 {
+                    print("Count: \(registerSet.count), Last: \(registerSet.last!), Item: \(program.registers[2])")
+                }
+                
+                if registerSet.count > 17000 {
+                    print("Past the accepted answer");
+                }
+                
+                registerSet.append(program.registers[2])
+                previous = program.registers[2]
+            }
+        } while program.instructionPointer >= 0 && program.instructionPointer < program.code.count
+        
+        return previous
     }
     
 }
