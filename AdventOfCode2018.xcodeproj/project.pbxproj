@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7BDB801A21CDFDC7008DF18D /* Day22PuzzleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDB801921CDFDC7008DF18D /* Day22PuzzleInput.swift */; };
+		7BDB801C21CDFDD4008DF18D /* Day22.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDB801B21CDFDD4008DF18D /* Day22.swift */; };
 		E01FE3DA21B93A1900519D06 /* Day06PuzzleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01FE3D921B93A1900519D06 /* Day06PuzzleInput.swift */; };
 		E01FE3DC21B93A2200519D06 /* Day06.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01FE3DB21B93A2200519D06 /* Day06.swift */; };
 		E01FE3DF21B93B8000519D06 /* Point2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01FE3DE21B93B8000519D06 /* Point2D.swift */; };
@@ -70,6 +72,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7BDB801921CDFDC7008DF18D /* Day22PuzzleInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day22PuzzleInput.swift; sourceTree = "<group>"; };
+		7BDB801B21CDFDD4008DF18D /* Day22.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day22.swift; sourceTree = "<group>"; };
 		E01FE3D921B93A1900519D06 /* Day06PuzzleInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day06PuzzleInput.swift; sourceTree = "<group>"; };
 		E01FE3DB21B93A2200519D06 /* Day06.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day06.swift; sourceTree = "<group>"; };
 		E01FE3DE21B93B8000519D06 /* Point2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point2D.swift; sourceTree = "<group>"; };
@@ -195,6 +199,7 @@
 				F05846DC21CA990A00BC9D63 /* Day19.swift */,
 				F0840D9421CBE335003286E9 /* Day20.swift */,
 				F0CD607621CD2DD800D8EBA2 /* Day21.swift */,
+				7BDB801B21CDFDD4008DF18D /* Day22.swift */,
 			);
 			path = Puzzles;
 			sourceTree = "<group>";
@@ -223,6 +228,7 @@
 				F05846DA21CA990200BC9D63 /* Day19PuzzleInput.swift */,
 				F0840D9221CBE32B003286E9 /* Day20PuzzleInput.swift */,
 				F0CD607421CD2DCE00D8EBA2 /* Day21PuzzleInput.swift */,
+				7BDB801921CDFDC7008DF18D /* Day22PuzzleInput.swift */,
 			);
 			path = "Puzzle input";
 			sourceTree = "<group>";
@@ -313,6 +319,7 @@
 				E0A56F8021C6A04200E400C5 /* Day16PuzzleInput.swift in Sources */,
 				F0A30D7D21C4050A00965952 /* Day14.swift in Sources */,
 				E0648FBC21B5546C000105DE /* Day03PuzzleInput.swift in Sources */,
+				7BDB801A21CDFDC7008DF18D /* Day22PuzzleInput.swift in Sources */,
 				F0840D9521CBE335003286E9 /* Day20.swift in Sources */,
 				E07BB3E821BD4984003AF648 /* Day09.swift in Sources */,
 				F0CD607721CD2DD800D8EBA2 /* Day21.swift in Sources */,
@@ -333,6 +340,7 @@
 				F0FB0A8521BFF88400624F17 /* Day11PuzzleInput.swift in Sources */,
 				E07BB3E621BD4978003AF648 /* Day09PuzzleInput.swift in Sources */,
 				F099F1F821B6C02F00D37DE7 /* Day04PuzzleInput.swift in Sources */,
+				7BDB801C21CDFDD4008DF18D /* Day22.swift in Sources */,
 				E0D0C48221B41E01001F231F /* Day02.swift in Sources */,
 				F0E550E521C97F1700BCC754 /* Day18.swift in Sources */,
 				E0B9869621B2B87B00649A62 /* Day01.swift in Sources */,
