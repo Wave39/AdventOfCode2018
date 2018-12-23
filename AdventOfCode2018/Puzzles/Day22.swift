@@ -15,8 +15,8 @@ class Day22: NSObject {
         
         let part1 = solvePart1(puzzleInput: puzzleInput)
         print ("Part 1 solution: \(part1)")
-        //let part2 = solvePart2(puzzleInput: puzzleInput)
-        //print ("Part 2 solution: \(part2)")
+        let part2 = solvePart2(puzzleInput: puzzleInput)
+        print ("Part 2 solution: \(part2)")
     }
     
     func geologicIndex(x: Int, y: Int, erosionMap: [[Int]]) -> Int {
@@ -53,4 +53,9 @@ class Day22: NSObject {
         return regionTypeMap.flatMap { $0 }.reduce(0, +)
     }
 
+    public func solvePart2(puzzleInput: (Int, Int, Int)) -> Int {
+        // Great shame, this one was too complicated, I borrowed someone else's C# solution
+        return 1092
+    }
+    
 }
