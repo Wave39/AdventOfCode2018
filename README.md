@@ -1,3 +1,8 @@
+The code in this repository has been moved to the AdventOfCode repository, so please check there
+for the code.
+
+https://github.com/Wave39/AdventOfCode
+
 # Advent Of Code 2018 Solution Machine
 
 This Mac OS command line application provides solutions to the puzzles on the Advent Of Code web site. 
